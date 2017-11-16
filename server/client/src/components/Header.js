@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import Payments from './Payments';
+
 
 
 
@@ -13,13 +13,7 @@ class Header extends Component {
       case false:
         return <li><a href="/auth/google">Login</a></li>;
       default:
-        return [
-          <li key="1"><Payments /></li>,
-          <li key="3" style={{margin: '0 20px'}}>
-            Credits: { this.props.auth.credits }
-          </li>,
-          <li key="2"><a href="/api/logout">Logout</a></li>
-        ];
+        return <li><a href="/api/logout">Logout</a></li>;
     }
   }
 
@@ -27,18 +21,14 @@ class Header extends Component {
     return(
       <nav>
         <div className="nav-wrapper">
-          <Link
-            to={this.props.auth ? '/surveys' : '/'}
+          <Link 
+            to={this.props.auth ? '/surveys' : '/'} 
             className="left brand-logo"
-            >
-              Base Platform
-            </Link>
-
-          <ul id="nav-mobile" className="right hide-on-med-and-down">
+          >
+            Emaily
+          </Link>
+          <ul className="right">
             {this.renderContent()}
-            {/* <li><a href="/auth/google">Login</a></li>
-            <li>|</li>
-            <li><a href="#">Register</a></li> */}
           </ul>
         </div>
       </nav>

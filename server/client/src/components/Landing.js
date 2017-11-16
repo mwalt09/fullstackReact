@@ -1,16 +1,12 @@
 import React from 'react';
 
-
 const Landing = () => {
   return (
     <div style={{ textAlign: 'center' }}>
-      <h1>
-        Base Platform
-      </h1>
-        This is test content
+      <h1>Emaily</h1>
+      Collect feedack from your users
     </div>
-  )
+  );
 }
-
 
 export default Landing;

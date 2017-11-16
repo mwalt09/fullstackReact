@@ -41,7 +41,6 @@ app.use(passport.session());
 
 //----------------------   Call authRoutes and immediately call 'app' function   ----------------------
 require("./routes/authRoutes")(app);
-require("./routes/billingRoutes")(app);
 
 
 
