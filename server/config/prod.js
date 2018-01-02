@@ -1,3 +1,5 @@
+// Heroku: young-retreat-79543
+
 module.exports = {
   googleClientID: process.env.GOOGLE_CLIENT_ID,
   googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
@@ -5,5 +7,6 @@ module.exports = {
   cookieKey: process.env.COOKIE_KEY,
   stripPublishableKey: process.env.STRIP_PUBLISHABLE_KEY,
   stripeSecretKey: process.env.STRIPE_SECRET_KEY,
-  sendGridKey: process.env.SEND_GRID_KEY
+  sendGridKey: process.env.SEND_GRID_KEY,
+  redirectDomain: process.env.REDIRECT_DOMAIN
 };
